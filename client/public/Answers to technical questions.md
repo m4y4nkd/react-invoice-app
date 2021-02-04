@@ -12,9 +12,12 @@ _3. What was the most useful feature that was added by you in the application? D
   The UI was created via Material UI > Card component. The calculation logic was pretty simple and I used lodash's SumBy function to sum all the values present again "total" key in the invoices array. I also used the Set object combined with object spreading to get unique client names present in the array
   You can view the complete code in ./client/src/components/SummaryCard.jsx
 
-  Snippet of the exact code logic-
+- Snippet of the exact code logic-
+  <br />
+
   _const clients = [...new Set(invoices.map((invoice) => invoice.clientName))];_
-  _const amount = _.sumBy(invoices, "total");\_
+
+  _const amount = \_.sumBy(invoices, "total");_
 
 _4. How would you track down a performance issue in production? Have you ever had to do this?_
 

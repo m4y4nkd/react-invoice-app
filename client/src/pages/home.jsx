@@ -32,7 +32,7 @@ export default function Home() {
           </a>
 
           <a
-            href="./files/Answers to technical questions.md"
+            href="https://github.com/m4y4nkd/react-invoice-app/blob/master/client/public/Answers%20to%20technical%20questions.md"
             target="_blank"
             rel="noreferrer"
             className="card"
