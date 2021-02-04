@@ -1,6 +1,6 @@
 _1. How long did you spend on the coding test?_
 
-- I spent approx 2.5 days to complete this test.
+- I spent approx 3 days to complete this test.
 
 _2. What would you add to your solution if you had more time? If you didn't spend much time on the coding test then use this as an opportunity to explain what you would add._
 
