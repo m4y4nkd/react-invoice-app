@@ -23,6 +23,7 @@
   },
   "scripts": {
     "webpack-dev-server": "node_modules/.bin/webpack-dev-server --hot --inline --env.NODE_ENV=development --progress --config webpack.dev.js",
+    "start": "node_modules/.bin/webpack --progress --config webpack.prod.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -64,9 +65,9 @@
     "postcss-loader": "^3.0.0",
     "prettier": "^2.1.2",
     "style-loader": "^1.2.1",
-    "terser-webpack-plugin": "^5.0.1",
+    "terser-webpack-plugin": "^4.2.3",
     "url-loader": "^4.1.0",
-    "webpack": "4.44.1",
+    "webpack": "4.44.2",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0",
     "webpack-merge": "5.2.0"

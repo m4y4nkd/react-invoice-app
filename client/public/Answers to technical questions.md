@@ -4,7 +4,7 @@ _1. How long did you spend on the coding test?_
 
 _2. What would you add to your solution if you had more time? If you didn't spend much time on the coding test then use this as an opportunity to explain what you would add._
 
-- I would have added a more featues to dashboard such as alerts of invoices with upcoming due dates, invoice comparison graphs. Morever, I'd have build out a 'Reports' page providing access to different type of reports for the user.
+- I would have added more features to dashboard such as alerts of invoices with upcoming due dates, invoice comparison graphs. Morever, I'd have build out a 'Reports' page providing access to different type of reports for the user.
 
 _3. What was the most useful feature that was added by you in the application? Did you use any existing library for it? If yes, please share the link. Please include a snippet of code that shows how you've used it._
 
