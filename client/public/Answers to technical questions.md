@@ -11,6 +11,7 @@ _3. What was the most useful feature that was added by you in the application? D
 - I believe the most useful feature were the Summary cards "Dashbaord" page which showed the user a summary of all their invices based on status and included the total amount and the number of clients in each status. This provides a pretty useful overview of the whole data in the system.
   The UI was created via Material UI > Card component. The calculation logic was pretty simple and I used lodash's SumBy function to sum all the values present again "total" key in the invoices array. I also used the Set object combined with object spreading to get unique client names present in the array
   You can view the complete code in ./client/src/components/SummaryCard.jsx
+  https://github.com/m4y4nkd/react-invoice-app/blob/master/client/src/components/SummaryCard.jsx
 
 - Snippet of the exact code logic-
   <br />
