@@ -1,0 +1,207 @@
+[
+  {
+    "clientName": "Client 1",
+    "invoiceNum": 100,
+    "invoiceDate": "2020-10-10",
+    "dueDate": "2020-10-31",
+    "status": "Paid",
+    "notes": "This is a sample note where you can type anything.",
+    "lineItems": [
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 1",
+        "units": "kg",
+        "quantity": 4,
+        "price": 100,
+        "discount": 10,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 2",
+        "description": "This is the description of the item 2",
+        "units": "kg",
+        "quantity": 1,
+        "price": 150,
+        "discount": 50,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 3",
+        "units": "kg",
+        "quantity": 2,
+        "price": 500,
+        "discount": 20,
+        "tax": 5,
+        "subTotal": 378.0
+      }
+    ],
+    "total": 200
+  },
+  {
+    "clientName": "Test Client 2",
+    "invoiceNum": 101,
+    "invoiceDate": "2020-11-01",
+    "dueDate": "2020-11-30",
+    "status": "Paid",
+    "notes": "This is a sample note where you can type anything.",
+    "lineItems": [
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 1",
+        "units": "kg",
+        "quantity": 4,
+        "price": 100,
+        "discount": 10,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 2",
+        "description": "This is the description of the item 2",
+        "units": "kg",
+        "quantity": 1,
+        "price": 150,
+        "discount": 50,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 3",
+        "units": "kg",
+        "quantity": 2,
+        "price": 500,
+        "discount": 20,
+        "tax": 5,
+        "subTotal": 378.0
+      }
+    ],
+    "total": 510
+  },
+  {
+    "clientName": "Test 3 Client",
+    "invoiceNum": 102,
+    "invoiceDate": "2020-10-10",
+    "dueDate": "2020-12-31",
+    "status": "Overdue",
+    "notes": "This is a sample note where you can type anything.",
+    "lineItems": [
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 1",
+        "units": "kg",
+        "quantity": 4,
+        "price": 100,
+        "discount": 10,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 2",
+        "description": "This is the description of the item 2",
+        "units": "kg",
+        "quantity": 1,
+        "price": 150,
+        "discount": 50,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 3",
+        "units": "kg",
+        "quantity": 2,
+        "price": 500,
+        "discount": 20,
+        "tax": 5,
+        "subTotal": 378.0
+      }
+    ],
+    "total": 321
+  },
+  {
+    "clientName": "4 Test Client",
+    "invoiceNum": 104,
+    "invoiceDate": "2020-10-10",
+    "dueDate": "2021-03-31",
+    "status": "Outstanding",
+    "notes": "This is a sample note where you can type anything.",
+    "lineItems": [
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 1",
+        "units": "kg",
+        "quantity": 4,
+        "price": 100,
+        "discount": 10,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 2",
+        "description": "This is the description of the item 2",
+        "units": "kg",
+        "quantity": 1,
+        "price": 150,
+        "discount": 50,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 3",
+        "units": "kg",
+        "quantity": 2,
+        "price": 500,
+        "discount": 20,
+        "tax": 5,
+        "subTotal": 378.0
+      }
+    ],
+    "total": 20
+  },
+  {
+    "clientName": "Client 5",
+    "invoiceNum": 105,
+    "invoiceDate": "2020-12-18",
+    "dueDate": "2021-02-05",
+    "status": "Outstanding",
+    "notes": "This is a sample note where you can type anything.",
+    "lineItems": [
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 1",
+        "units": "kg",
+        "quantity": 4,
+        "price": 100,
+        "discount": 10,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 2",
+        "description": "This is the description of the item 2",
+        "units": "kg",
+        "quantity": 1,
+        "price": 150,
+        "discount": 50,
+        "tax": 5,
+        "subTotal": 378.0
+      },
+      {
+        "name": "List Item 1",
+        "description": "This is the description of the item 3",
+        "units": "kg",
+        "quantity": 2,
+        "price": 500,
+        "discount": 20,
+        "tax": 5,
+        "subTotal": 378.0
+      }
+    ],
+    "total": 521
+  }
+]
