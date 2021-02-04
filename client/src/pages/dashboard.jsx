@@ -28,7 +28,7 @@ import CompanyInfo from "../components/CompanyInfo";
 import ViewAllComponent from "../components/ViewAll";
 import { UserContext } from "../../context/UserContext";
 import InvoiceProvider from "../../context/InvoiceContext";
-import CompanyProvider from "../../context/CompanyContext";
+
 import CreateForm from "../components/CreateForm";
 
 const drawerWidth = 240;
@@ -199,23 +199,22 @@ export default function DashboardPage(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <CompanyProvider>
-          <InvoiceProvider>
-            {page === "Dashboard" ? (
-              <DashboardComponent setPage={setPage} />
-            ) : null}
-            {page === "Company Info" ? (
-              <CompanyInfo requestAction="view" />
-            ) : null}
-            {page === "Create Invoice" ? <CreateForm action="Create" /> : null}
-            {page === "Edit Invoice" ? (
-              <CreateForm action="Edit" invoice={invoiceProp} />
-            ) : null}
-            {page === "View All Invoices" ? (
-              <ViewAllComponent onEdit={onEdit} />
-            ) : null}
-          </InvoiceProvider>
-        </CompanyProvider>
+
+        <InvoiceProvider>
+          {page === "Dashboard" ? (
+            <DashboardComponent setPage={setPage} />
+          ) : null}
+          {page === "Company Info" ? (
+            <CompanyInfo requestAction="view" />
+          ) : null}
+          {page === "Create Invoice" ? <CreateForm action="Create" /> : null}
+          {page === "Edit Invoice" ? (
+            <CreateForm action="Edit" invoice={invoiceProp} />
+          ) : null}
+          {page === "View All Invoices" ? (
+            <ViewAllComponent onEdit={onEdit} />
+          ) : null}
+        </InvoiceProvider>
       </main>
     </div>
   );

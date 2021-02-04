@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignIn() {
-  const [popup, setPopup] = useState(false);
   const classes = useStyles();
+  const [popup, setPopup] = useState(false);
   const [form, setForm] = useState({ email: "", password: "" });
   const { setUser } = useContext(UserContext);
   const history = useHistory();
@@ -50,6 +50,9 @@ export default function SignIn() {
     if (reason !== "clickaway") {
       setPopup(false);
     }
+  };
+  const validateForm = () => {
+    return !(form.email && form.password);
   };
 
   return (
@@ -100,6 +103,7 @@ export default function SignIn() {
           variant="contained"
           color="primary"
           className={classes.submit}
+          disabled={validateForm()}
           onClick={onSubmit}
         >
           Sign In

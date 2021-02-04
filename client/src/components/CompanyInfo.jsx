@@ -10,6 +10,7 @@ import Save from "@material-ui/icons/Save";
 import Create from "@material-ui/icons/Create";
 import Checkbox from "@material-ui/core/Checkbox";
 import { makeStyles } from "@material-ui/core/styles";
+import { useHistory } from "react-router-dom";
 import { CompanyContext } from "../../context/CompanyContext";
 
 const useStyles = makeStyles((theme) => ({
@@ -33,6 +34,7 @@ export default function CompanyInfo(props) {
   const [form, setForm] = useState(company);
   const [action, setAction] = useState(requestAction);
   const classes = useStyles();
+  const history = useHistory();
 
   const validateForm = () => {
     return !(
@@ -50,14 +52,18 @@ export default function CompanyInfo(props) {
   };
 
   const onSave = () => {
-    setAction("view");
     setCompany(form);
+    if (action === "onBoard") {
+      history.push("/dashboard");
+    } else {
+      setAction("view");
+    }
   };
   const onEdit = () => {
     setAction("edit");
   };
 
-  if (action === "edit") {
+  if (action === "edit" || action === "onBoard") {
     return (
       <>
         <Typography variant="h5" gutterBottom>
@@ -173,15 +179,17 @@ export default function CompanyInfo(props) {
             sm={6}
             style={{ display: "flex", justifyContent: "flex-end" }}
           >
-            <Button
-              onClick={onReset}
-              variant="outlined"
-              startIcon={<ClearOutlined />}
-              disableElevation
-              color="secondary"
-            >
-              Cancel
-            </Button>
+            {action !== "onBoard" && (
+              <Button
+                onClick={onReset}
+                variant="outlined"
+                startIcon={<ClearOutlined />}
+                disableElevation
+                color="secondary"
+              >
+                Cancel
+              </Button>
+            )}
           </Grid>
           <Grid item xs={12} sm={6}>
             <Button

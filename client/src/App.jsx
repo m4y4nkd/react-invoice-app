@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import UserProvider from "../context/UserContext";
+import CompanyProvider from "../context/CompanyContext";
+import CompanyInfo from "./components/CompanyInfo";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/dashboard";
 import Home from "./pages/home";
@@ -11,12 +13,18 @@ export default function App() {
   return (
     <div className="container">
       <UserProvider>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/signin" component={SignIn} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/dashboard" component={Dashboard} />
-        </Switch>
+        <CompanyProvider>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/signin" component={SignIn} />
+            <Route path="/signup" component={Signup} />
+            <Route path="/dashboard" component={Dashboard} />
+            <Route
+              path="/onboarding"
+              render={() => <CompanyInfo requestAction="onBoard" />}
+            />
+          </Switch>
+        </CompanyProvider>
       </UserProvider>
       <Footer />
 
